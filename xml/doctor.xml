@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="rule1.xsl"?> 
+ <Doctor> 
+  <s> 
+   <name>Nagaraj</name> 
+   <qual>MBBS</qual>
+   <phone>864644649</phone > 
+  </s> 
+  <s> 
+   <name>Neethi</name> 
+   <qual>MBBS Md</qual>
+   <phone>956674345</phone > 
+  </s> 
+  <s> 
+   <name>Niwin</name> 
+   <qual>MBBS MS</qual>
+   <phone>884374566</phone > 
+  </s>
+  <s> 
+   <name>Sridhar</name> 
+   <qual>MBBS</qual>
+   <phone>634374384</phone > 
+  </s>   
+ </Doctor> 

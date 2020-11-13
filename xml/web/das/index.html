@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Medical Management System</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.error {color: #FF0000;}
+	</style>
+	
+
+	
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="header_top">
+			<!-- <a href="index.php"><img src="img/dash2.jpg" alt="logo.png img"></a> -->
+
+			<span style="font-size:50px;color:#2c2f84;font-weight:bolder;margin-left:15px;">Doctor Appoinment System</span>
+		</div>
+
+	<!-- 	this is for menu -->
+	<div class="navbar navbar-default nav">
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="doctorinfo.html">Medical Doctors</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="yu.html">Workers & hospital details</a></li>
+				<li><a href="1.html">patients details</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+
+
+	<!-- this is for welcome -->
+	<div class="content">
+		<article>
+			<img src="img/welcome1.png" alt="welcome msg">
+			<p class="text-justify">Blood is universally recognized as the most precious element that sustains life. It saves innumerable lives across the world in a variety of conditions. The need for blood is great - on any given day, approximately 39,000 units of Red Blood Cells are needed. More than 29 million units of blood components are transfused every year. Donate Blood Despite the increase in the number of donors, blood remains in short supply during emergencies, mainly attributed to the lack of information and accessibility. We positively believe this tool can overcome most of these challenges by effectively connecting the blood donors with the blood recipients.
+			</p>
+		</article>
+		<div>
+                          <h3>Places and their prices</h3>
+                          <ul id ="p1"></ul>
+                          <ul id ="p2"></ul>
+                          <ul id ="p3"></ul>
+                          <ul id ="p4"></ul>
+                          <ul id ="p5"></ul>
+                        </div>
+                        
+
+
+	
+	</div><br>
+
+	<!-- nivo slider starts -->
+	<div class="col-md-12 sliderImg">
+		<img src="img/doctor5.jpg" alt="">
+		<img src="img/doctor3.jpg" alt="">
+		<img src="img/doctor4.jpg" alt="">
+		<img src="img/hstu8.jpg"   alt="">
+		<img src="img/doctor3.jpg" alt="">
+		<img src="img/doctor4.jpg" alt="">
+	</div>
+	<!-- nivo slider ends -->
+
+	<!-- main Content -->
+	<div class="main_content">
+		<div class="col-md-8">
+			<article>
+			<h3 style="font-weight: bold;font-family:inherit;">Finds Doctors from anywhere anytime!</h3><hr>
+				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt et dolores neque eaque. Labore, dicta similique ipsam odit saepe obcaecati suscipit ducimus, commodi dolores animi sed beatae, quia nulla facilis.lorem 
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi.</p>
+			</article>
+		</div>
+		<div class="col-md-4">
+			<h3 class="text-center" style="font-weight:bold;font-family:inherit;">Doctors Appoinment...?</h3><hr>
+			<ul class="text-justify">
+				
+				Totam, doloribus quisquam eaque inventore consectetur sapiente itaque aliquid quae tempore. Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi.  Eveniet iusto obcaecati magni qui laboriosam saepe unde, totam odio excepturi
+			</ul>
+		</div>
+
+          
+    </div>
+	
+
+
+
+	
+</div>	<!--  containerFluid Ends -->
+
+
+
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script>
+    var text = '{"hospitalpatient":['+
+   '{"name": "Ajmeer","Age": "45","Blood_Group": "B+","phone": "964374376"},'+
+   '{"name": "kaja","Age": "33","Blood_Group": "AB+","phone": "956674390"},'+
+   '{"name": "Dharani","Age": "23","Blood_Group": "A+","phone": "884374366"},'+
+   '{"name": "Ramji","Age": "56","Blood_Group": "B+","phone": "634374389" }]}';
+
+  var obj = JSON.parse(text);
+   document.getElementById("p1").innerHTML =  "<li>" + obj.hospitalpatient[0].name + " - " +  obj.hospitalpatient[0].Blood_Group + "</li>" ;
+    document.getElementById("p2").innerHTML =  "<li>" + obj.hospitalpatient[1].name + " - " +  obj.hospitalpatient[1].Blood_Group + "</li>" ;
+     document.getElementById("p3").innerHTML =  "<li>" + obj.hospitalpatient[2].name + " - " +  obj.hospitalpatient[2].Blood_Group + "</li>" ;
+      document.getElementById("p4").innerHTML =  "<li>" + obj.hospitalpatient[3].name + " - " +  obj.hospitalpatient[3].Blood_Group + "</li>" ;
+
+</script>
+
+	
+</body>
+</html>
